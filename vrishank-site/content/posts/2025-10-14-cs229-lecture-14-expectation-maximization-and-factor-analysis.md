@@ -2,7 +2,7 @@
 title: "Lecture 14: Expectation-Maximization and Factor Analysis"
 slug: cs229-lecture-14-expectation-maximization-and-factor-analysis
 date: 2025-10-14
-tags: [cs229, None, course-notes]
+tags: [cs229, machine-learning, course-notes]
 summary: "Stanford CS229 lecture 14 notes: Expectation-Maximization and Factor Analysis."
 ---
 

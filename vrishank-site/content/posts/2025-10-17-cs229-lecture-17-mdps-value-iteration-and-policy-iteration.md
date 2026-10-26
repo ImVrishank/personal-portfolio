@@ -2,7 +2,7 @@
 title: "Lecture 17: MDPs, Value Iteration and Policy Iteration"
 slug: cs229-lecture-17-mdps-value-iteration-and-policy-iteration
 date: 2025-10-17
-tags: [cs229, None, course-notes]
+tags: [cs229, machine-learning, course-notes]
 summary: "Stanford CS229 lecture 17 notes: MDPs, Value Iteration and Policy Iteration."
 ---
 

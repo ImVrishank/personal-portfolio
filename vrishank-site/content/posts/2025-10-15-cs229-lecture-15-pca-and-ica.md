@@ -2,7 +2,7 @@
 title: "Lecture 15: PCA and ICA"
 slug: cs229-lecture-15-pca-and-ica
 date: 2025-10-15
-tags: [cs229, None, course-notes]
+tags: [cs229, machine-learning, course-notes]
 summary: "Stanford CS229 lecture 15 notes: PCA and ICA."
 ---
 

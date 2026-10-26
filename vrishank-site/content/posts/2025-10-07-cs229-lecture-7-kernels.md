@@ -2,7 +2,7 @@
 title: "Lecture 7: Kernels"
 slug: cs229-lecture-7-kernels
 date: 2025-10-07
-tags: [cs229, None, course-notes]
+tags: [cs229, machine-learning, course-notes]
 summary: "Stanford CS229 lecture 7 notes: Kernels."
 ---
 

@@ -2,7 +2,7 @@
 title: "Lecture 13: Debugging ML Models and Error Analysis"
 slug: cs229-lecture-13-debugging-ml-models-and-error-analysis
 date: 2025-10-13
-tags: [cs229, None, course-notes]
+tags: [cs229, machine-learning, course-notes]
 summary: "Stanford CS229 lecture 13 notes: Debugging ML Models and Error Analysis."
 ---
 

@@ -2,7 +2,7 @@
 title: "Lecture 20: RL Debugging, Diagnostics and Policy Search"
 slug: cs229-lecture-20-rl-debugging-diagnostics-and-policy-search
 date: 2025-10-20
-tags: [cs229, None, course-notes]
+tags: [cs229, machine-learning, course-notes]
 summary: "Stanford CS229 lecture 20 notes: RL Debugging, Diagnostics and Policy Search."
 ---
 

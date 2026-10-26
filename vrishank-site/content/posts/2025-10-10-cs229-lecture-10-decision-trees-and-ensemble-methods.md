@@ -2,7 +2,7 @@
 title: "Lecture 10: Decision Trees and Ensemble Methods"
 slug: cs229-lecture-10-decision-trees-and-ensemble-methods
 date: 2025-10-10
-tags: [cs229, None, course-notes]
+tags: [cs229, machine-learning, course-notes]
 summary: "Stanford CS229 lecture 10 notes: Decision Trees and Ensemble Methods."
 ---
 

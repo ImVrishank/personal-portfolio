@@ -2,7 +2,7 @@
 title: "Lecture 4: Perceptron and Generalized Linear Models"
 slug: cs229-lecture-4-perceptron-and-generalized-linear-models
 date: 2025-10-04
-tags: [cs229, None, course-notes]
+tags: [cs229, machine-learning, course-notes]
 summary: "Stanford CS229 lecture 4 notes: Perceptron and Generalized Linear Models."
 ---
 

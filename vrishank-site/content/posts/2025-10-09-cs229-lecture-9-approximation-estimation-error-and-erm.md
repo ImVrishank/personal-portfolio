@@ -2,7 +2,7 @@
 title: "Lecture 9: Approximation/Estimation Error and ERM"
 slug: cs229-lecture-9-approximation-estimation-error-and-erm
 date: 2025-10-09
-tags: [cs229, None, course-notes]
+tags: [cs229, machine-learning, course-notes]
 summary: "Stanford CS229 lecture 9 notes: Approximation/Estimation Error and ERM."
 ---
 

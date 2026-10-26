@@ -2,7 +2,7 @@
 title: "Lecture 19: Reward Models and Linear Dynamical Systems"
 slug: cs229-lecture-19-reward-models-and-linear-dynamical-systems
 date: 2025-10-19
-tags: [cs229, None, course-notes]
+tags: [cs229, machine-learning, course-notes]
 summary: "Stanford CS229 lecture 19 notes: Reward Models and Linear Dynamical Systems."
 ---
 

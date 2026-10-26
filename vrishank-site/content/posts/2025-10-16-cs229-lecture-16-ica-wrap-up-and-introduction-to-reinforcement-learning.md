@@ -2,7 +2,7 @@
 title: "Lecture 16: ICA Wrap-up and Introduction to Reinforcement Learning"
 slug: cs229-lecture-16-ica-wrap-up-and-introduction-to-reinforcement-learning
 date: 2025-10-16
-tags: [cs229, None, course-notes]
+tags: [cs229, machine-learning, course-notes]
 summary: "Stanford CS229 lecture 16 notes: ICA Wrap-up and Introduction to Reinforcement Learning."
 ---
 
