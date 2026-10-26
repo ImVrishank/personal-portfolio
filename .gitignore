@@ -1,5 +1,8 @@
-tentacle_project/
+.DS_Store
 Final/
 cs224n_lectures_6_to_13.md
 cs229_all_lectures.md
+dist
 files.zip
+node_modules
+tentacle_project/
