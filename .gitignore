@@ -1,0 +1,5 @@
+tentacle_project/venv/
+__pycache__/
+*.pyc
+tentacle_project/rl/runs/*/checkpoints/
+tentacle_project/rl/runs/*_test/

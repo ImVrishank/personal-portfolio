@@ -1,0 +1,29 @@
+<div class="studio site-editor" id="se">
+  <aside class="drafts" aria-label="Site sections">
+    <div class="drafts-head"><h1>Studio</h1></div>
+    <nav class="studio-tabs" aria-label="Studio sections"><a href="/studio/">Posts</a><a href="/studio/site/" aria-current="page">Site</a></nav>
+    <ul id="se-sections" class="draft-list"></ul>
+    <div class="drafts-foot">
+      <div class="publish-actions">
+        <button type="button" id="se-download" class="s-btn">Download site.json</button>
+        <button type="button" id="se-reset" class="s-btn danger">Discard edits</button>
+      </div>
+      <p class="hint" id="se-saved">Loading…</p>
+      <ul id="se-pending" class="image-list"></ul>
+      <details class="gh" id="gh">
+        <summary>Publish to GitHub</summary>
+        <div class="gh-form">
+          <!--GH_FIELDS-->
+          <div class="publish-actions">
+            <button type="button" id="se-commit" class="s-btn primary">Commit changes</button>
+            <button type="button" id="se-load" class="s-btn">Load from repo</button>
+          </div>
+          <p class="hint" id="gh-status" role="status"></p>
+        </div>
+      </details>
+    </div>
+  </aside>
+  <section class="se-main" aria-label="Site content form">
+    <div id="se-form" class="se-form"></div>
+  </section>
+</div>

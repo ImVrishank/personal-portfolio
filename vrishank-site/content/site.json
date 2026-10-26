@@ -1,0 +1,523 @@
+{
+  "name": "Vrishank Aryan S",
+  "short": "Vrishank",
+  "url": "",
+  "title": "Vrishank Aryan S · Robotics, embedded systems and physical AI",
+  "description": "Software engineer building robots, embedded systems and production AI. Intern at Hoogway.ai, joining Dell in June 2027. Based in Bangalore.",
+  "location": "Bangalore, India",
+  "availability": "Intern at Hoogway.ai · joining Dell in June 2027",
+  "links": {
+    "email": "imvrishank@gmail.com",
+    "github": "https://github.com/ImVrishank",
+    "linkedin": "https://www.linkedin.com/in/VrishankAryan/",
+    "resume": "",
+    "x": "https://x.com/itsvrishank"
+  },
+  "statement": "I build *robots*, embedded systems and the AI that runs on them.",
+  "bio": [
+    "I'm a software engineer in Bangalore, studying Information Science at UVCE. I like problems where code has to touch the physical world: a servo that has to move on time, a model that has to fit on a Jetson, a voice agent that has to hold up on a real phone call.",
+    "Right now I'm an AI and software engineering intern at Hoogway.ai, working on a production voice-AI pipeline, and I'm joining Dell in June 2027. Outside of work I build robots, train a reinforcement-learning environment on a tendon-driven arm in MuJoCo, and rebuild language-model pieces from scratch to see how they work."
+  ],
+  "now": {
+    "title": "Now",
+    "text": "AI and software engineering intern at Hoogway.ai, on a production voice-AI pipeline. Joining Dell in June 2027. On the side: training an RL environment on SpiRobs, a three-tendon arm simulated in MuJoCo."
+  },
+  "work": [
+    {
+      "company": "Dell",
+      "role": "Incoming",
+      "period": "Starting June 2027",
+      "location": "",
+      "intro": "",
+      "items": []
+    },
+    {
+      "company": "Hoogway.ai",
+      "role": "AI / Software Engineering Intern",
+      "period": "March 2026 to now",
+      "location": "Bangalore",
+      "intro": "I work on a production, real-time voice AI pipeline: the prompts it runs, the audio it records and the tools the team uses to review calls.",
+      "items": [
+        {
+          "title": "A prompt system that improves itself",
+          "text": [
+            "Live call traffic is routed across 4 competing prompt variants using Thompson Sampling and Bayesian selection. An automated scorer grades every call on five rubrics: clarity, task completion, engagement, accuracy and tone.",
+            "An A/B and regeneration framework retires the losers and writes new variants by distilling traits from the survivors. It replaced ad-hoc prompt tweaking with a statistically sound decision loop, wired into the voice pipeline, LLM APIs and call transcripts. I also fixed prompt-attribution mismatches in the bandit, so it only learns from correctly attributed data."
+          ],
+          "chips": [
+            "Thompson Sampling",
+            "4 variants",
+            "5-rubric scoring",
+            "live traffic"
+          ]
+        },
+        {
+          "title": "Audio infrastructure at scale",
+          "text": [
+            "I reverse-engineered a third-party telephony provider's recording-access protocol and built a server-side audio proxy with HTTP Range forwarding and multi-credential fallback.",
+            "To find dead recordings without downloading them, I wrote a pure-Python MP3 duration engine that reads raw MPEG frame headers. It gets exact length (±0.07s) from only the first 16KB of a file. Run asynchronously over 27K recordings, it filtered out silent and sub-3-second audio and cut projected bandwidth from about 4GB to a fraction of that.",
+            "The data side is a multi-tenant pipeline that streams and serializes a 90K+ document MongoDB corpus without loading it into memory. Along the way I closed silent data-corruption risks in the ingest path."
+          ],
+          "chips": [
+            "27K recordings",
+            "±0.07s",
+            "90K+ documents",
+            "16KB per file"
+          ]
+        },
+        {
+          "title": "Call review platform",
+          "text": [
+            "A self-contained full-stack tool for reviewing calls: audio player, structured forms that auto-save, live analytics and a deterministic assignment algorithm that guarantees no two reviewers get the same call. FastAPI, vanilla JS and SQLite, packaged with Docker and deployed on Linux."
+          ],
+          "chips": []
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "slug": "spirobs",
+      "group": "featured",
+      "domain": "robotics",
+      "tags": [
+        "mujoco",
+        "rl",
+        "simulation"
+      ],
+      "title": "SpiRobs",
+      "kind": "MuJoCo simulation and RL environment · personal project",
+      "status": "In progress",
+      "summary": [
+        "A 3D simulation in MuJoCo of a tendon-driven robotic arm: three tendons, three actuators. I'm training a reinforcement-learning environment on it, and training is going well."
+      ],
+      "specs": [
+        [
+          "Simulator",
+          "MuJoCo, 3D"
+        ],
+        [
+          "Arm",
+          "Three tendons"
+        ],
+        [
+          "Actuation",
+          "3 actuators"
+        ],
+        [
+          "Learning",
+          "Reinforcement-learning environment, training in progress"
+        ]
+      ],
+      "image": "",
+      "links": [
+        {
+          "label": "Code on GitHub",
+          "href": "https://github.com/ImVrishank/Spirobs"
+        }
+      ],
+      "art": "spirobs"
+    },
+    {
+      "slug": "sesame",
+      "group": "featured",
+      "title": "Sesame",
+      "kind": "Voice-controlled robot · personal build",
+      "status": "Built",
+      "summary": [
+        "Sesame is an open-source conversational robot designed by Dorian Todd. I rebuilt it on my own electronics instead of the original PCB, then wrote the firmware that ties everything together.",
+        "A single ESP32 handles the microphone, speaker, display and eight servos. It listens for voice commands, talks back and moves in response. I also edited the enclosure's top-cover STL so the new electronics fit."
+      ],
+      "specs": [
+        [
+          "Controller",
+          "ESP32-WROOM, custom firmware"
+        ],
+        [
+          "Display",
+          "SSD1306 OLED over I²C"
+        ],
+        [
+          "Actuation",
+          "PCA9685 PWM driver, 8 micro servos"
+        ],
+        [
+          "Power",
+          "UBEC regulated supply"
+        ],
+        [
+          "Audio",
+          "Microphone and speaker, hands-free voice I/O"
+        ],
+        [
+          "Enclosure",
+          "Modified STL top cover"
+        ]
+      ],
+      "image": "",
+      "links": [
+        {
+          "label": "Read the build story",
+          "href": "/writing/sesame-quadruped/"
+        },
+        {
+          "label": "Original design by Dorian Todd",
+          "href": "https://github.com/dorianborian/sesame-robot/"
+        }
+      ],
+      "domain": "hardware",
+      "tags": [
+        "esp32",
+        "servos"
+      ]
+    },
+    {
+      "slug": "edge-ai",
+      "group": "featured",
+      "title": "Edge AI and robotics",
+      "kind": "On-device perception · personal project",
+      "status": "Built",
+      "summary": [
+        "Real-time object detection running on-device, where compute is tight. An ESP32 turns the model's output into physical action, so the robot sees something and reacts to it."
+      ],
+      "specs": [
+        [
+          "Compute",
+          "NVIDIA Jetson Nano, Raspberry Pi 5"
+        ],
+        [
+          "Control",
+          "ESP32 bridging model output to actuators"
+        ],
+        [
+          "Task",
+          "Real-time object detection, on-device"
+        ],
+        [
+          "Loop",
+          "Perception to actuation, closed"
+        ]
+      ],
+      "image": "",
+      "links": [
+        {
+          "label": "Code on GitHub",
+          "href": "https://github.com/ImVrishank/Object-detection"
+        }
+      ],
+      "domain": "hardware",
+      "tags": [
+        "jetson",
+        "vision"
+      ]
+    },
+    {
+      "slug": "mars-uav",
+      "group": "featured",
+      "title": "Mars Surface Survey UAV",
+      "kind": "Autonomous drone · ISRO Robotics Hackathon",
+      "status": "Competition",
+      "summary": [
+        "A drone built for an ISRO-organized hackathon that simulated autonomous surveying of the Martian surface. I worked on software and electronics subsystems and on integrating them on the aerial platform under competition constraints."
+      ],
+      "specs": [
+        [
+          "Platform",
+          "Unmanned aerial vehicle"
+        ],
+        [
+          "Mission",
+          "Simulated autonomous Mars surface survey"
+        ],
+        [
+          "My part",
+          "Software and electronics subsystems, integration"
+        ],
+        [
+          "Event",
+          "ISRO Robotics Hackathon"
+        ]
+      ],
+      "image": "",
+      "links": [],
+      "domain": "hardware",
+      "tags": [
+        "uav"
+      ]
+    },
+    {
+      "slug": "gpt2",
+      "group": "scratch",
+      "title": "GPT-2 transformer",
+      "kind": "PyTorch · open source",
+      "status": "Open source",
+      "summary": [
+        "A mini GPT-2 written from the ground up: custom tokenizer, token and positional embeddings, causal multi-head self-attention, residual feed-forward layers and autoregressive generation. Trained on Tiny Shakespeare."
+      ],
+      "specs": [],
+      "image": "",
+      "links": [
+        {
+          "label": "Code on GitHub",
+          "href": "https://github.com/ImVrishank/NLP"
+        },
+        {
+          "label": "Read the full blog",
+          "href": "/writing/attention-is-all-you-need/"
+        }
+      ],
+      "domain": "ai",
+      "tags": [
+        "transformers"
+      ]
+    },
+    {
+      "slug": "bpe",
+      "group": "scratch",
+      "title": "BPE tokenizer",
+      "kind": "Python",
+      "status": "Built",
+      "summary": [
+        "The cl100k_base tokenizer used by GPT-4, reimplemented from scratch: subword tokenization, merge rules and vocabulary construction."
+      ],
+      "specs": [],
+      "image": "",
+      "links": [],
+      "domain": "ai",
+      "tags": [
+        "tokenizer"
+      ]
+    },
+    {
+      "slug": "word2vec",
+      "group": "scratch",
+      "title": "Word2Vec",
+      "kind": "Python",
+      "status": "Built",
+      "summary": [
+        "Word embeddings built without a framework, capturing semantic relationships as the base for similarity and analogy tasks."
+      ],
+      "specs": [],
+      "image": "",
+      "links": [
+        {
+          "label": "Code on GitHub",
+          "href": "https://github.com/ImVrishank/Word2Vec"
+        }
+      ],
+      "domain": "ai",
+      "tags": [
+        "embeddings"
+      ]
+    },
+    {
+      "slug": "braincells",
+      "group": "scratch",
+      "title": "BrainCells",
+      "kind": "PyTorch tensors only",
+      "status": "Open source",
+      "summary": [
+        "A neural network built using only raw PyTorch tensors: no torch.nn, no autograd. Forward pass, activations, loss, backprop and weight updates all written by hand."
+      ],
+      "specs": [],
+      "image": "",
+      "links": [
+        {
+          "label": "Code on GitHub",
+          "href": "https://github.com/ImVrishank/BrainCells"
+        },
+        {
+          "label": "The neural networks blog",
+          "href": "/writing/neural-networks/"
+        }
+      ],
+      "domain": "ai",
+      "tags": [
+        "neural-networks"
+      ]
+    },
+    {
+      "slug": "naive-bayes",
+      "group": "scratch",
+      "title": "Naive Bayes spam classifier",
+      "kind": "NumPy, SciPy, Pandas",
+      "status": "Built",
+      "summary": [
+        "A spam classifier from scratch using word frequencies and Bayes’ theorem, with no ML libraries."
+      ],
+      "specs": [],
+      "image": "",
+      "links": [
+        {
+          "label": "Notebook on GitHub",
+          "href": "https://github.com/ImVrishank/from_scratch_implementations/blob/main/spam_detector(Naive%20bayes).ipynb"
+        }
+      ],
+      "domain": "ai",
+      "tags": [
+        "probabilistic"
+      ]
+    },
+    {
+      "slug": "from-scratch",
+      "group": "scratch",
+      "title": "From-scratch implementations",
+      "kind": "NumPy · ongoing",
+      "status": "Open source",
+      "summary": [
+        "Perceptron, softmax regression, Gaussian discriminant analysis and SGD, written with only NumPy and the math, a repo I keep adding to."
+      ],
+      "specs": [],
+      "image": "",
+      "links": [
+        {
+          "label": "Code on GitHub",
+          "href": "https://github.com/ImVrishank/from_scratch_implementations"
+        }
+      ],
+      "domain": "ai",
+      "tags": [
+        "ml"
+      ]
+    }
+  ],
+  "skills": [
+    [
+      "Languages",
+      "C++, Python, C, Java, JavaScript, Rust"
+    ],
+    [
+      "Robotics and embedded",
+      "ESP32 (WROOM, CAM), Raspberry Pi 4/5, NVIDIA Jetson Nano, STM32, I²C, PWM, servo and actuator control, PCA9685, power regulation, edge AI"
+    ],
+    [
+      "AI and ML",
+      "PyTorch, TensorFlow, Keras, Hugging Face Transformers, NumPy, scikit-learn, OpenCV, LangChain. Deep learning, NLP, LLMs, computer vision, Bayesian methods, multi-armed bandits, prompt engineering."
+    ],
+    [
+      "Software and systems",
+      "Linux, Git, Docker, FastAPI, REST APIs, MongoDB, SQLite, async and concurrent programming"
+    ]
+  ],
+  "education": {
+    "school": "University of Visvesvaraya College of Engineering (UVCE)",
+    "degree": "B.Tech, Information Science Engineering",
+    "place": "Bangalore",
+    "note": "CGPA 8.93"
+  },
+  "topics": [
+    {
+      "slug": "robotics",
+      "label": "Robotics",
+      "glyph": "⚙"
+    },
+    {
+      "slug": "math",
+      "label": "Mathematics",
+      "glyph": "∑"
+    },
+    {
+      "slug": "ai",
+      "label": "AI / ML",
+      "glyph": "∇"
+    },
+    {
+      "slug": "electronics",
+      "label": "Electronics",
+      "glyph": "Ω"
+    },
+    {
+      "slug": "notes",
+      "label": "Notes",
+      "glyph": "¶"
+    }
+  ],
+  "home": {
+    "kicker": "Notes from a workbench",
+    "latelyNote": "The newest notes",
+    "projectsNote": "Builds, experiments and half-answers",
+    "benchNote": "The boards I program",
+    "contactHeadline": "Say *hello*.",
+    "contactCopy": "Internships, projects and odd hardware ideas are all welcome."
+  },
+  "about": {
+    "title": "Hello, I'm *Vrishank*",
+    "lede": "I'm a software engineer in Bangalore studying Information Science at UVCE. I like problems where code has to touch the physical world: a servo that has to move on time, a model that has to fit on a Jetson, a voice agent that has to hold up on a real phone call.",
+    "paragraphs": [
+      "I'm a software engineer in Bangalore, studying Information Science at UVCE. I like problems where code has to touch the physical world: a servo that has to move on time, a model that has to fit on a Jetson, a voice agent that has to hold up on a real phone call.",
+      "Right now I'm an AI and software engineering intern at Hoogway.ai, working on a production voice-AI pipeline, and I'm joining Dell in June 2027. Outside of work I build robots, train a reinforcement-learning environment on a tendon-driven arm in MuJoCo, and rebuild language-model pieces from scratch to see how they work."
+    ],
+    "approach": [
+      "Rebuild it from scratch to see how it works: a GPT-2, a BPE tokenizer, Word2Vec, and Sesame on my own electronics instead of the original PCB.",
+      "Make the thing touch the real world: servos that have to move on time, models that have to fit on a Jetson, a voice agent that has to survive a real phone call.",
+      "Measure before believing: bandit-tested prompts, and file lengths read from the first 16KB instead of downloading gigabytes."
+    ],
+    "explore": [
+      "Robotics",
+      "Embedded systems",
+      "Edge AI",
+      "Reinforcement learning",
+      "Simulation (MuJoCo)",
+      "Language-model internals",
+      "Voice AI"
+    ]
+  },
+  "repos": [
+    {
+      "name": "Spirobs",
+      "desc": "A tentacle built with actuators and cables for tendons",
+      "lang": "Python",
+      "tag": "Robotics",
+      "url": "https://github.com/ImVrishank/Spirobs"
+    },
+    {
+      "name": "NLP",
+      "desc": "All my NLP projects and learnings, including the GPT-2 build",
+      "lang": "Jupyter Notebook",
+      "tag": "AI",
+      "url": "https://github.com/ImVrishank/NLP"
+    },
+    {
+      "name": "Word2Vec",
+      "desc": "Word2Vec from scratch",
+      "lang": "Jupyter Notebook",
+      "tag": "AI",
+      "url": "https://github.com/ImVrishank/Word2Vec"
+    },
+    {
+      "name": "BrainCells",
+      "desc": "Neural networks implemented from scratch",
+      "lang": "Python",
+      "tag": "AI",
+      "url": "https://github.com/ImVrishank/BrainCells"
+    },
+    {
+      "name": "from_scratch_implementations",
+      "desc": "Basic ML concepts implemented from scratch",
+      "lang": "Jupyter Notebook",
+      "tag": "AI",
+      "url": "https://github.com/ImVrishank/from_scratch_implementations"
+    },
+    {
+      "name": "Research-Papers",
+      "desc": "",
+      "lang": "Jupyter Notebook",
+      "tag": "AI",
+      "url": "https://github.com/ImVrishank/Research-Papers"
+    },
+    {
+      "name": "Object-detection",
+      "desc": "An object detection model that identifies signs made on the webcam",
+      "lang": "",
+      "tag": "AI",
+      "url": "https://github.com/ImVrishank/Object-detection"
+    },
+    {
+      "name": "Dingleberry",
+      "desc": "All my Raspberry Pi projects in one place",
+      "lang": "Python",
+      "tag": "Hardware",
+      "url": "https://github.com/ImVrishank/Dingleberry"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+numpy
+gymnasium
+mujoco>=3.1
+stable-baselines3>=2.3
+# PyTorch CPU build (install this line separately, smaller than the default):
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu

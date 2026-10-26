@@ -1,0 +1,85 @@
+<div class="studio" id="studio" data-view="write">
+  <aside class="drafts" aria-label="Drafts">
+    <div class="drafts-head">
+      <h1>Studio</h1>
+      <button type="button" id="new" class="s-btn primary">New post</button>
+    </div>
+    <nav class="studio-tabs" aria-label="Studio sections"><a href="/studio/" aria-current="page">Posts</a><a href="/studio/site/">Site</a></nav>
+    <ul id="draft-list" class="draft-list"></ul>
+    <div class="drafts-foot">
+      <label class="s-btn">Import .md<input id="import" type="file" accept=".md,.markdown,.txt" multiple hidden></label>
+      <p class="hint">Drop Markdown files anywhere on this page to import them. Drafts are stored in this browser only, so export a post to keep it.</p>
+    </div>
+  </aside>
+
+  <section class="editor" aria-label="Editor">
+    <div class="meta-form">
+      <input id="f-title" class="title-input" placeholder="Post title" autocomplete="off" aria-label="Title">
+      <div class="grid3">
+        <label>Date<input type="date" id="f-date"></label>
+        <label>Slug<input id="f-slug" autocomplete="off" placeholder="my-first-post"></label>
+        <label>Tags<input id="f-tags" autocomplete="off" placeholder="esp32, firmware"></label>
+      </div>
+      <label>Summary<input id="f-summary" autocomplete="off" placeholder="One sentence shown in the post list"></label>
+      <div class="grid3">
+        <label>Topic<select id="f-category"><option value="">None</option></select></label>
+        <label>Layout<select id="f-layout"><option value="default">Text first</option><option value="photo">Photo opening</option><option value="math">Equation opening</option></select></label>
+        <label>Cover image<input id="f-cover" autocomplete="off" placeholder="/media/cover.jpg"></label>
+      </div>
+      <label>Opening equation (LaTeX, used by the equation layout and cards)<input id="f-equation" autocomplete="off" placeholder="e^{i\pi}+1=0"></label>
+      <label class="check"><input type="checkbox" id="f-featured"> Featured (shown big on the archive and home page)</label>
+      <label class="check"><input type="checkbox" id="f-draft"> Draft (hidden from the live site)</label>
+    </div>
+
+    <div class="toolbar" role="toolbar" aria-label="Formatting">
+      <button type="button" data-act="h2" title="Heading">H2</button>
+      <button type="button" data-act="h3" title="Subheading">H3</button>
+      <button type="button" data-act="bold" title="Bold (Ctrl/Cmd+B)"><b>B</b></button>
+      <button type="button" data-act="italic" title="Italic (Ctrl/Cmd+I)"><i>I</i></button>
+      <button type="button" data-act="link" title="Link">Link</button>
+      <button type="button" data-act="code" title="Inline code">Code</button>
+      <button type="button" data-act="codeblock" title="Code block">Block</button>
+      <button type="button" data-act="ul" title="List">List</button>
+      <button type="button" data-act="quote" title="Quote">Quote</button>
+      <button type="button" data-act="table" title="Table">Table</button>
+      <label class="tb-file" title="Insert image">Image<input id="img-input" type="file" accept="image/*" hidden></label>
+      <span class="tb-spacer"></span>
+      <div class="view-toggle" role="group" aria-label="View">
+        <button type="button" id="v-write" aria-pressed="true">Write</button>
+        <button type="button" id="v-preview" aria-pressed="false">Preview</button>
+      </div>
+    </div>
+
+    <textarea id="body" spellcheck="true" aria-label="Post body in Markdown" placeholder="Write in Markdown. Paste or drop an image to add it."></textarea>
+
+    <div class="statusbar"><span id="count"></span><span id="saved"></span></div>
+
+    <div class="publish">
+      <div class="publish-actions">
+        <button type="button" id="download" class="s-btn primary">Download .md</button>
+        <button type="button" id="copy" class="s-btn">Copy Markdown</button>
+        <button type="button" id="delete" class="s-btn danger">Delete draft</button>
+      </div>
+      <p class="hint" id="publish-hint"></p>
+      <details class="gh" id="gh">
+        <summary>Publish to GitHub</summary>
+        <div class="gh-form">
+          <!--GH_FIELDS-->
+          <div class="publish-actions">
+            <button type="button" id="gh-publish" class="s-btn primary">Commit this post</button>
+            <button type="button" id="gh-pull" class="s-btn">Pull posts from repo</button>
+          </div>
+          <p class="hint" id="gh-status" role="status"></p>
+          <p class="hint">Create a fine-grained token (GitHub, Settings, Developer settings) limited to this one repository with Contents: read and write. One commit contains the post and any images you added. If the repo is connected to Cloudflare Pages or Vercel, the site rebuilds on its own.</p>
+        </div>
+      </details>
+      <ul id="image-list" class="image-list"></ul>
+    </div>
+  </section>
+
+  <section class="preview" aria-label="Preview">
+    <article class="prose" id="preview"></article>
+  </section>
+
+  <div class="drop" id="drop" hidden><p>Drop .md files to import</p></div>
+</div>
