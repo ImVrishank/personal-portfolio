@@ -1,5 +1,5 @@
-tentacle_project/venv/
-__pycache__/
-*.pyc
-tentacle_project/rl/runs/*/checkpoints/
-tentacle_project/rl/runs/*_test/
+tentacle_project/
+Final/
+cs224n_lectures_6_to_13.md
+cs229_all_lectures.md
+files.zip
