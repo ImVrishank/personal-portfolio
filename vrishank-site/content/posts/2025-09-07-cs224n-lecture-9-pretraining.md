@@ -2,8 +2,7 @@
 title: "Lecture 9: Pretraining"
 slug: cs224n-lecture-9-pretraining
 date: 2025-09-07
-category: notes
-tags: [cs224n, None, course-notes]
+tags: [cs224n, nlp, course-notes]
 summary: "Stanford CS224N lecture 9 notes: Pretraining."
 ---
 

@@ -2,7 +2,6 @@
 title: "Lecture 8: Data Splits, Models and Cross-Validation"
 slug: cs229-lecture-8-data-splits-models-and-cross-validation
 date: 2025-10-08
-category: notes
 tags: [cs229, None, course-notes]
 summary: "Stanford CS229 lecture 8 notes: Data Splits, Models and Cross-Validation."
 ---

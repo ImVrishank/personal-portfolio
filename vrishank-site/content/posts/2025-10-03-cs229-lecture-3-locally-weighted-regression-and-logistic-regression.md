@@ -2,7 +2,6 @@
 title: "Lecture 3: Locally Weighted Regression and Logistic Regression"
 slug: cs229-lecture-3-locally-weighted-regression-and-logistic-regression
 date: 2025-10-03
-category: notes
 tags: [cs229, None, course-notes]
 summary: "Stanford CS229 lecture 3 notes: Locally Weighted Regression and Logistic Regression."
 ---

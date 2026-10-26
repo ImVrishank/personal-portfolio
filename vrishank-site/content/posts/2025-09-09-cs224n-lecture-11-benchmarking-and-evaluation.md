@@ -2,8 +2,7 @@
 title: "Lecture 11: Benchmarking and Evaluation"
 slug: cs224n-lecture-11-benchmarking-and-evaluation
 date: 2025-09-09
-category: notes
-tags: [cs224n, None, course-notes]
+tags: [cs224n, nlp, course-notes]
 summary: "Stanford CS224N lecture 11 notes: Benchmarking and Evaluation."
 ---
 

@@ -2,8 +2,7 @@
 title: "Lecture 10: Post-training (Instruction Tuning and RLHF)"
 slug: cs224n-lecture-10-post-training-instruction-tuning-and-rlhf
 date: 2025-09-08
-category: notes
-tags: [cs224n, None, course-notes]
+tags: [cs224n, nlp, course-notes]
 summary: "Stanford CS224N lecture 10 notes: Post-training (Instruction Tuning and RLHF)."
 ---
 

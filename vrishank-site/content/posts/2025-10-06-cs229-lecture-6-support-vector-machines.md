@@ -2,7 +2,6 @@
 title: "Lecture 6: Support Vector Machines"
 slug: cs229-lecture-6-support-vector-machines
 date: 2025-10-06
-category: notes
 tags: [cs229, None, course-notes]
 summary: "Stanford CS229 lecture 6 notes: Support Vector Machines."
 ---

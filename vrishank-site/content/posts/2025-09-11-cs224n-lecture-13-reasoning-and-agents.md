@@ -2,8 +2,7 @@
 title: "Lecture 13: Reasoning and Agents"
 slug: cs224n-lecture-13-reasoning-and-agents
 date: 2025-09-11
-category: notes
-tags: [cs224n, None, course-notes]
+tags: [cs224n, nlp, course-notes]
 summary: "Stanford CS224N lecture 13 notes: Reasoning and Agents."
 ---
 

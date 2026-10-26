@@ -368,7 +368,8 @@ function projectFeature(p, i) {
 function renderWritingIndex() {
   const byTopic = {}; posts.forEach((p) => { if (p.category) byTopic[p.category] = (byTopic[p.category] || 0) + 1; });
   const used = TOPICS.filter((t) => byTopic[t.slug]);
-  const tags = [...new Set(posts.flatMap((p) => p.tags.map((t) => t.toLowerCase())))];
+  const tagCount = {}; posts.forEach((p) => p.tags.forEach((t) => { t = t.toLowerCase(); tagCount[t] = (tagCount[t] || 0) + 1; }));
+  const tags = Object.keys(tagCount).sort((a, b) => tagCount[b] - tagCount[a]);
   const feat = posts.find((p) => p.featured), list = posts.filter((p) => p !== feat);
   const card = (p) => `<li data-topic="${esc(p.category)}" data-tags="${esc(p.tags.map((t) => t.toLowerCase()).join('|'))}" data-text="${esc((p.title + ' ' + p.summary + ' ' + p.tags.join(' ')).toLowerCase())}">
     <a class="wcard${p.cover ? ' has-cover' : ' text-only'}" href="/writing/${p.slug}/" data-probe="read">

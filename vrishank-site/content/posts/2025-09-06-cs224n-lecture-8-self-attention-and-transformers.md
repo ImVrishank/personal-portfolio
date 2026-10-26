@@ -2,8 +2,7 @@
 title: "Lecture 8: Self-Attention and Transformers"
 slug: cs224n-lecture-8-self-attention-and-transformers
 date: 2025-09-06
-category: notes
-tags: [cs224n, None, course-notes]
+tags: [cs224n, nlp, course-notes]
 summary: "Stanford CS224N lecture 8 notes: Self-Attention and Transformers."
 ---
 

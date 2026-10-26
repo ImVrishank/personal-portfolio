@@ -2,7 +2,6 @@
 title: "Lecture 1: Introduction and Word Vectors"
 slug: cs224n-lecture-1-word-vectors
 date: 2025-03-29
-category: notes
 tags: [cs224n, nlp, course-notes]
 summary: "Stanford CS224N lecture 1 notes: why human language is hard for machines, and word vectors as the starting point."
 ---

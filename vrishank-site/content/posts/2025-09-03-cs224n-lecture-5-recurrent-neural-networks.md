@@ -2,7 +2,6 @@
 title: "Lecture 5 - Recurrent Neural Networks"
 slug: cs224n-lecture-5-recurrent-neural-networks
 date: 2025-09-03
-category: notes
 tags: [cs224n, nlp, course-notes]
 summary: "Stanford CS224N lecture 5 notes: recurrent neural networks and language models, and why very large networks still generalise."
 ---

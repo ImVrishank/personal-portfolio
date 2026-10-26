@@ -2,8 +2,7 @@
 title: "Lecture 7: Attention"
 slug: cs224n-lecture-7-attention
 date: 2025-09-05
-category: notes
-tags: [cs224n, None, course-notes]
+tags: [cs224n, nlp, course-notes]
 summary: "Stanford CS224N lecture 7 notes: Attention."
 ---
 

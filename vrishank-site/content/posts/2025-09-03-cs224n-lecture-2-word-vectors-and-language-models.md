@@ -2,7 +2,6 @@
 title: "Lecture 2: Word vectors and Language Models"
 slug: cs224n-lecture-2-word-vectors-and-language-models
 date: 2025-09-03
-category: notes
 tags: [cs224n, nlp, course-notes]
 summary: "Stanford CS224N lecture 2 notes: bag-of-words, how word vectors are learned, and language models."
 ---

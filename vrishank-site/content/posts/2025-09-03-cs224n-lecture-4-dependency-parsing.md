@@ -2,7 +2,6 @@
 title: "Lecture 4: Dependency Parsing"
 slug: cs224n-lecture-4-dependency-parsing
 date: 2025-09-03
-category: notes
 tags: [cs224n, nlp, course-notes]
 summary: "Stanford CS224N lecture 4 notes: phrase structure and dependency parsing, and how words combine into phrases and sentences."
 ---

@@ -2,7 +2,6 @@
 title: "Lecture 1: Introduction to Machine Learning"
 slug: cs229-lecture-1-introduction-to-machine-learning
 date: 2025-10-01
-category: notes
 tags: [cs229, None, course-notes]
 summary: "Stanford CS229 lecture 1 notes: Introduction to Machine Learning."
 ---

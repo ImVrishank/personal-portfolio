@@ -2,8 +2,7 @@
 title: "Lecture 6: LSTMs, GRUs, Seq2Seq and Machine Translation"
 slug: cs224n-lecture-6-lstms-grus-seq2seq-and-machine-translation
 date: 2025-09-04
-category: notes
-tags: [cs224n, None, course-notes]
+tags: [cs224n, nlp, course-notes]
 summary: "Stanford CS224N lecture 6 notes: LSTMs, GRUs, Seq2Seq and Machine Translation."
 ---
 

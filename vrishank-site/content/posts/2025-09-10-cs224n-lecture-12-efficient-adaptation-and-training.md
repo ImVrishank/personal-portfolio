@@ -2,8 +2,7 @@
 title: "Lecture 12: Efficient Adaptation and Training"
 slug: cs224n-lecture-12-efficient-adaptation-and-training
 date: 2025-09-10
-category: notes
-tags: [cs224n, None, course-notes]
+tags: [cs224n, nlp, course-notes]
 summary: "Stanford CS224N lecture 12 notes: Efficient Adaptation and Training."
 ---
 

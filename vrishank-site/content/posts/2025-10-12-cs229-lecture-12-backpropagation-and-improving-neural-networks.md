@@ -2,7 +2,6 @@
 title: "Lecture 12: Backpropagation and Improving Neural Networks"
 slug: cs229-lecture-12-backpropagation-and-improving-neural-networks
 date: 2025-10-12
-category: notes
 tags: [cs229, None, course-notes]
 summary: "Stanford CS229 lecture 12 notes: Backpropagation and Improving Neural Networks."
 ---

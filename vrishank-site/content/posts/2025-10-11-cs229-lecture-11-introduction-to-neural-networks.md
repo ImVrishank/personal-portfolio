@@ -2,7 +2,6 @@
 title: "Lecture 11: Introduction to Neural Networks"
 slug: cs229-lecture-11-introduction-to-neural-networks
 date: 2025-10-11
-category: notes
 tags: [cs229, None, course-notes]
 summary: "Stanford CS229 lecture 11 notes: Introduction to Neural Networks."
 ---

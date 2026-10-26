@@ -2,7 +2,6 @@
 title: "Lecture 18: Continuous State MDPs and Model Simulation"
 slug: cs229-lecture-18-continuous-state-mdps-and-model-simulation
 date: 2025-10-18
-category: notes
 tags: [cs229, None, course-notes]
 summary: "Stanford CS229 lecture 18 notes: Continuous State MDPs and Model Simulation."
 ---

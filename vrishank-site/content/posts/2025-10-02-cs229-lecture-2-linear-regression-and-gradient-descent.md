@@ -2,7 +2,6 @@
 title: "Lecture 2: Linear Regression and Gradient Descent"
 slug: cs229-lecture-2-linear-regression-and-gradient-descent
 date: 2025-10-02
-category: notes
 tags: [cs229, None, course-notes]
 summary: "Stanford CS229 lecture 2 notes: Linear Regression and Gradient Descent."
 ---
