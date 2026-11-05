@@ -459,3 +459,7 @@ html.no-js .reveal { opacity: 1; transform: none; }
 .hero { grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr); gap: clamp(24px, 4vw, 56px); }
 .sim.in-hero { box-shadow: none; }
 .mermaid-wrap { margin: 1.5em 0; overflow-x: auto; text-align: center; } .mermaid-wrap pre.mermaid { background: none; border: 0; padding: 0; font-family: var(--mono); font-size: 13px; white-space: pre; }
+@media (max-width: 900px) { .hero { grid-template-columns: minmax(0, 1fr); } .hero-name { font-size: clamp(48px, 15vw, 88px); } .hero .statement { max-width: none; } .sim.in-hero canvas { height: clamp(340px, 100vw, 520px); } .hero-links .btn, .hero-links a { flex: 0 0 auto; } }
+@media (max-width: 900px) { .hero-name { text-wrap: balance; } }
+@media (max-width: 760px) { .plist a { grid-template-columns: 64px minmax(0, 1fr) auto; } .pl-sum { min-width: 0; overflow-wrap: anywhere; } }
+@media (max-width: 760px) { .plist a { grid-template-columns: 56px minmax(0, 1fr); align-items: start; } .pl-ico { grid-column: 1; grid-row: 1 / span 3; } .pl-title, .pl-kind, .plist .tag { grid-column: 2; grid-row: auto; justify-self: start; } .pl-sum { grid-column: 1 / -1; } }
