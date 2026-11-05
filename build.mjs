@@ -172,7 +172,7 @@ const simStage = (cls = '') => `<figure class="sim ${cls}" data-spirobs>
     <ul class="sim-ten">${[0, 1, 2].map((k) => `<li data-tendon="${k}"><span>T${k}</span><em><i></i></em><b>0.0</b><small>mm</small></li>`).join('')}</ul>
     <p class="sim-tip" data-tip>x 0  z 0 mm</p>
   </div></div>
-  <figcaption><span class="fig-n">Live</span> The arm from my MuJoCo model, rebuilt for the browser. Move your pointer: the tip follows it, and the three readouts are the tendon pulls it takes to get there.</figcaption>
+  <figcaption><span class="fig-n">Live</span> The arm from my MuJoCo model, rebuilt for the browser. Move your pointer (or drag a finger across it): the tip follows.</figcaption>
 </figure>`;
 
 /* ---------- layout ---------- */

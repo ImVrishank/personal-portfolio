@@ -71,7 +71,9 @@
     /* pointer -> camera-plane target in mm, relative to the base. Works anywhere on the page. */
     addEventListener('pointermove', (e) => {
       const r = canvas.getBoundingClientRect();
-      ptr.x = (e.clientX - r.left - bx0) / scale; ptr.y = (by0 - (e.clientY - r.top)) / scale; ptr.seen = 1; ptr.idle = 0;
+      if (e.pointerType === 'touch' && (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom)) return; // a thumb scrolling the page should not fling the arm
+      const reach = Math.min(ARM * 0.62, (W / 2 - 24) / scale); // keep the target where the arm can be drawn inside the box
+      ptr.x = Math.max(-reach, Math.min(reach, (e.clientX - r.left - bx0) / scale)); ptr.y = Math.max(30, Math.min(ARM * 0.95, (by0 - (e.clientY - r.top)) / scale)); ptr.seen = 1; ptr.idle = 0;
     }, { passive: true });
     addEventListener('pointerleave', () => { ptr.idle = 99; });
 

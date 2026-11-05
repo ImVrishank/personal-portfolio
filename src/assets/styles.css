@@ -463,3 +463,5 @@ html.no-js .reveal { opacity: 1; transform: none; }
 @media (max-width: 900px) { .hero-name { text-wrap: balance; } }
 @media (max-width: 760px) { .plist a { grid-template-columns: 64px minmax(0, 1fr) auto; } .pl-sum { min-width: 0; overflow-wrap: anywhere; } }
 @media (max-width: 760px) { .plist a { grid-template-columns: 56px minmax(0, 1fr); align-items: start; } .pl-ico { grid-column: 1; grid-row: 1 / span 3; } .pl-title, .pl-kind, .plist .tag { grid-column: 2; grid-row: auto; justify-self: start; } .pl-sum { grid-column: 1 / -1; } }
+@media (max-width: 640px) { .sim.in-hero .sim-ten { display: none; } .sim.in-hero canvas { height: clamp(340px, 96vw, 460px); } .hero-name { font-size: clamp(46px, 14vw, 80px); line-height: .98; } .hero-links { gap: 10px; } .hero-role span { font-size: 12px; } }
+@media (max-width: 640px) { .hero-links .btn { padding: 10px 16px; font-size: 14.5px; } }
