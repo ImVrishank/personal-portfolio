@@ -33,7 +33,7 @@ for (const file of pages) {
   for (const m of body.matchAll(/(?:href|src)="([^"]+)"/g)) {
     const url = m[1];
     if (/^(https?:|mailto:|tel:|data:|blob:|\/\/)/.test(url)) continue;
-    const [pathPart, hash] = url.split('#');
+    const [pathPart, hash] = url.replace(/\?v=[a-f0-9]+/, '').split('#');
     const target = pathPart ? resolve(pathPart.startsWith('/') ? pathPart : path.posix.join(where, pathPart)) : file;
     if (!target) { errors.push(`${where}  broken link/asset: ${url}`); continue; }
     if (hash && target.endsWith('.html') && !idsOf(target).has(hash)) errors.push(`${where}  missing anchor: ${url}`);

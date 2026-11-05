@@ -674,6 +674,19 @@ try {
   for (const f of fs.readdirSync(path.join(kd, 'fonts')).filter((f) => f.endsWith('.woff2'))) fs.copyFileSync(path.join(kd, 'fonts', f), path.join(OUT, 'assets/katex/fonts', f));
 } catch (e) { console.warn('! Could not copy KaTeX assets (math will render unstyled):', e.message); }
 
+// cache-busting: tag every local css/js reference with a hash of the file, so a changed file always gets a new URL
+{
+  const crypto = require('node:crypto');
+  const hashes = new Map();
+  const ver = (u) => { if (!hashes.has(u)) { const f = path.join(OUT, u); hashes.set(u, fs.existsSync(f) ? crypto.createHash('md5').update(fs.readFileSync(f)).digest('hex').slice(0, 8) : ''); } return hashes.get(u); };
+  const walk = (d) => fs.readdirSync(d, { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? (e.name === 'media' || e.name === 'assets' ? [] : walk(path.join(d, e.name))) : e.name.endsWith('.html') ? [path.join(d, e.name)] : []));
+  for (const f of walk(OUT)) {
+    const html = fs.readFileSync(f, 'utf8');
+    const out = html.replace(/((?:src|href)=")(\/assets\/[^"?#]+\.(?:css|js))(")/g, (m, a, u, c) => (ver(u) ? `${a}${u}?v=${ver(u)}${c}` : m));
+    if (out !== html) fs.writeFileSync(f, out);
+  }
+}
+
 const L = site.links || {};
 if (!L.email && !L.github && !L.linkedin) console.warn('! No contact links set in content/site.json');
 console.log(`Built ${posts.length} post(s), ${projects.length} project(s), ${parts.length} part(s) -> dist/`);
